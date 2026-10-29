@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Membership System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🏋️ AeroFit Dashboard</h2>
+        <form id="memberForm">
+            <input type="text" id="name" placeholder="Member Full Name" required>
+            <input type="text" id="plan" placeholder="Membership Plan (e.g., Premium)" required>
+            <input type="number" id="duration" placeholder="Duration (Months)" required>
+            <button type="submit">Add Gym Member</button>
+        </form>
+        <div id="statusMessage"></div>
+
+        <h3>Active Gym Members</h3>
+        <table id="membersTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Membership Plan</th>
+                    <th>Duration (Months)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
